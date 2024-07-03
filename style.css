@@ -124,3 +124,70 @@ table {
 }
 
 /* css reset above */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  height: 10vh;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  background-color: #edf2fb;
+}
+
+.left-navbar,
+.right-navbar {
+  width: 25%;
+  padding: 30px 50px 0 50px;
+}
+
+.left-navbar > span {
+  font-size: 1.5em;
+  color: rgb(35, 33, 44);
+}
+
+.middle-navbar {
+  width: 50%;
+  padding-top: 40px;
+}
+
+.middle-navbar > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-navbar a {
+  color: rgb(143, 141, 141);
+}
+
+.right-navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.right-navbar > button {
+  padding: 10px 40px;
+  background-color: #3d5467;
+  color: white;
+  font-size: 1.1em;
+}
+
+main {
+  height: 50vh;
+  border: solid 1px red;
+  display: flex;
+}
