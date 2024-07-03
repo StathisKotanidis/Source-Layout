@@ -126,6 +126,7 @@ table {
 /* css reset above */
 
 body {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -170,7 +171,7 @@ nav {
 }
 
 .middle-navbar a {
-  color: rgb(143, 141, 141);
+  color: rgba(15, 15, 15, 0.829);
 }
 
 .right-navbar {
@@ -186,8 +187,66 @@ nav {
   font-size: 1.1em;
 }
 
+.right-navbar > button:hover,
+.left-main button:hover {
+  cursor: pointer;
+}
+
 main {
   height: 50vh;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   display: flex;
+  flex-direction: row;
+  background-color: #edf2fb;
+}
+
+.left-main {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 150px;
+}
+
+.left-main > span {
+  color: rgba(15, 15, 15, 0.829);
+  padding-bottom: 10px;
+}
+
+.left-main > h1 {
+  font-size: 1.3em;
+  color: rgb(35, 33, 44);
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.left-main input {
+  width: 30%;
+  padding: 10px 0;
+  background-color: rgba(189, 212, 210, 0.575);
+}
+
+.left-main button {
+  padding: 12px;
+  background-color: #3d5467;
+  color: white;
+}
+
+.left-main input::placeholder {
+  padding-left: 15px;
+}
+
+.left-main p {
+  padding-top: 15px;
+  width: 85%;
+  color: rgba(15, 15, 15, 0.829);
+}
+
+.right-main {
+  flex-basis: 50%;
+}
+
+.right-main img {
+  width: 100%;
+  height: 100%;
 }
