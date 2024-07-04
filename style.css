@@ -129,6 +129,7 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 a {
@@ -194,7 +195,6 @@ nav {
 
 main {
   height: 50vh;
-  /* border: solid 1px red; */
   display: flex;
   flex-direction: row;
   background-color: #edf2fb;
@@ -249,4 +249,54 @@ main {
 .right-main img {
   width: 100%;
   height: 100%;
+}
+
+.features-section {
+  display: flex;
+  height: 20vh;
+  background-color: #edf2fb;
+  padding: 10px 40px;
+}
+
+.first-feature,
+.second-feature,
+.third-feature,
+.fourth-feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 25%;
+}
+
+.feature-headers {
+  color: rgb(35, 33, 44);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.feature-paragraphs {
+  width: 60%;
+  color: rgba(15, 15, 15, 0.829);
+}
+
+.feature-links {
+  color: rgba(15, 15, 15, 0.829);
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: white;
+  height: 20vh;
+  padding: 50px 35px;
+}
+
+footer > h2 {
+  color: rgb(35, 33, 44);
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+footer > p {
+  color: rgb(163, 159, 159);
+  width: 38%;
 }
